@@ -1,0 +1,15 @@
+{
+    "name": "qanna/message-flasher",
+    "autoload": {
+        "psr-4": {
+            "Qanna\\MessageFlasher\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Ikageng Tladi",
+            "email": "tladiomphile@gmail.com"
+        }
+    ],
+    "require": {}
+}
