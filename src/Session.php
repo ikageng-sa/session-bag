@@ -82,10 +82,10 @@ class Session extends SessionHandler {
 	 */
 	public function getFlash($key): mixed {
 		$key = self::SESSION_FLASH . ".$key";
-
 		$value = $this->get($key, null);
+		$searchKey = trim(strrchr($key, '.'), '.'); // Get the substring after the last occurence of '.'
 
-		if ($value !== null && ($this->reflash == false || (is_array($this->reflash) && !key_exists($key, $this->reflash)))) {
+		if ($value !== null && ($this->reflash === false || (is_array($this->reflash) && !in_array($searchKey, $this->reflash)))) {
 			$this->forget($key);
 		}
 
@@ -94,12 +94,18 @@ class Session extends SessionHandler {
 
 	/**
 	 * Prevent flash message from being deleted once flashed
+	 *
+	 * @param array $keys [optional]
+	 * @return mixed
 	 */
 	public function reflash(array $keys = []) {
 		if (!empty($keys)) {
-			return $this->reflash = $keys;
+			$this->reflash = $keys;
+		} else {
+			$this->reflash = true;
 		}
-		return $this->reflash = true;
+
+		return $this->reflash;
 	}
 
 	/**
