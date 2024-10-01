@@ -1,15 +1,28 @@
 {
     "name": "qanna/session-bag",
     "description": "SessionBag is a lightweight and flexible package designed to simplify session management in PHP. It offers a convinient api for storing, retrieving and managing session data with a built-in feature for flashing messages. Whether you need to persist data across requests or temporarily flash to the user.",
+    "keywords": [
+        "php",
+        "session",
+        "flash messages",
+        "session management",
+        "data flash",
+        "message flasher",
+        "session handler",
+        "session storage",
+        "session package"
+    ],
+    "homepage": "https://github.com/ikageng-sa/session-bag",
+    "license": "MIT",
     "autoload": {
         "psr-4": {
-            "Qanna\\SessionBag\\": "src/",
-            "Qanna\\Tests\\": "tests/"
-        },
-        "classmap": [
-            "src/",
-            "tests/"
-        ]
+            "Qanna\\SessionBag\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+        "Qanna\\SessionBag\\Tests\\": "tests/"
+        }
     },
     "authors": [
         {
