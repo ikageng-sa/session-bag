@@ -30,7 +30,7 @@
             "email": "tladiomphile@gmail.com"
         }
     ],
-    "minimum-stability": "stable",
+    "minimum-stability": "dev",
     "require-dev": {
         "phpunit/phpunit": "11.1.3"
     }
