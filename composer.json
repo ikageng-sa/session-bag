@@ -1,7 +1,8 @@
 {
     "name": "qanna/session-bag",
     "description": "A lightweight and flexible package designed to simplify session management in PHP. It offers a convenient api for storing, retrieving and managing session data with a built-in feature for flashing messages.",
-    "keywords": [
+
+ "keywords": [
         "php",
         "session",
         "flash messages",
