@@ -3,6 +3,9 @@
 
 SessionBag makes session management as simple as reaching into a bag and pulling out exactly what you need, whether it's persistent data or temporary flash messages.
 
+***Note***: Session bag uses dot notation for hierarchical session data access.
+
+
 ### How-To
 
 ***Initialize the session***
