@@ -1,6 +1,6 @@
 <?php
 
-namespace Qanna\Tests;
+namespace Qanna\SessionBag\Tests;
 
 use PHPUnit\Framework\Attributes\Test;
 use PHPUnit\Framework\TestCase as FrameworkTestCase;

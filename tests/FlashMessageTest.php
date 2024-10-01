@@ -1,6 +1,6 @@
 <?php
 
-namespace Qanna\Tests;
+namespace Qanna\SessionBag\Tests;
 
 use function PHPUnit\Framework\assertTrue;
 use PHPUnit\Framework\Attributes\Test;
